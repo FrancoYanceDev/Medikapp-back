@@ -1,0 +1,29 @@
+GET http://localhost:5000/paciente/all
+
+GET http://localhost:5000/paciente?nombre=an
+
+GET http://localhost:5000/paciente/id?id_doctor=3
+
+
+POST http://localhost:5000/paciente
+Content-Type: application/json
+
+{
+    "id_doctor": 10, 
+    "nombre": "JUan", 
+    "telefono": "089324556782", 
+    "direccion": "Guayaquil, Ecuador"
+}
+
+PUT http://localhost:5000/paciente?id_doctor=8
+Content-Type: application/json
+
+{
+    "Id" : "5f63f0dafff46a78780db6e6",
+    "id_doctor": 8, 
+    "nombre": "ChriErtiAn", 
+    "telefono": "099324556782", 
+    "direccion": "Guayaquil, Ecuador"
+}
+
+DELETE http://localhost:5000/paciente?id_doctor=3
